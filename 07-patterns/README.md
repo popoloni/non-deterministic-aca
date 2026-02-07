@@ -24,6 +24,9 @@ Nearly 100 battle-tested agentic patterns across 8 categories, mapped to Ralph-b
 | File | Description |
 |------|-------------|
 | [immutable-contract.json](examples/immutable-contract.json) | Feature list as immutable contract |
+| [ralph-ci.yml](examples/ralph-ci.yml) | GitHub Actions workflow for Background Agent CI |
+| [solo-stack.sh](examples/solo-stack.sh) | Solo Developer Stack daily workflow script |
+| [tool-call-budget.md](examples/tool-call-budget.md) | Tool call budget template for CLAUDE.md |
 | [pattern-selection.md](pattern-selection.md) | Guide for choosing patterns |
 | [composition-stacks.md](composition-stacks.md) | Pattern composition examples |
 

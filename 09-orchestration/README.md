@@ -24,6 +24,21 @@ Multi-agent orchestration for readers ready to scale beyond single loops. Hat-ba
 - **3 agents**: Frontend, backend, infrastructure simultaneously
 - **Beyond 3**: Requires sophisticated tooling and acceptance of reduced oversight
 
+## The Broader Orchestration Landscape
+
+Ralph-style orchestration (file-driven, stateless iterations) is not the only approach. For non-coding workflows or enterprise agent systems, consider:
+
+| Framework | By | Core Concept | Best For |
+|-----------|-----|--------------|----------|
+| [LangGraph](https://langchain-ai.github.io/langgraph/) | LangChain | Stateful graphs with durable execution | Complex agent workflows with human-in-the-loop |
+| [CrewAI](https://docs.crewai.com/) | CrewAI Inc | Role-playing crews orchestrated by flows | Business-process automation |
+| [AutoGen](https://microsoft.github.io/autogen/) | Microsoft | Event-driven multi-runtime conversations | Enterprise distributed agents |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | OpenAI | Lightweight handoffs (successor to Swarm) | Minimal-dependency agent chains |
+
+**When to use what:**
+- **Writing code in a repo?** → Ralph loop (with or without hats) is simpler and more robust
+- **Data pipelines, content generation, customer support?** → Explore the frameworks above
+
 ## Hat-Based Orchestration
 
 Each hat has:

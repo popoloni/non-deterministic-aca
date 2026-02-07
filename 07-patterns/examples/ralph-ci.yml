@@ -1,0 +1,31 @@
+# .github/workflows/ralph-ci.yml
+# Background Agent CI pattern: the agent pushes to a feature branch,
+# CI validates, and writes feedback for the next iteration.
+name: Ralph CI Gate
+on:
+  push:
+    branches: ["feature/ralph-*"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test -- --coverage
+
+      - name: Post failure feedback to branch
+        if: failure()
+        run: |
+          echo "CI_FAILED: see Actions run $GITHUB_RUN_ID" \
+            >> ci-feedback.txt
+          git config user.name "ralph-ci"
+          git config user.email "ralph-ci@noreply"
+          git add ci-feedback.txt
+          git commit -m "ci: feedback from run $GITHUB_RUN_ID"
+          git push

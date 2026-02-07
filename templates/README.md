@@ -15,6 +15,9 @@ Production-ready implementations for autonomous development systems. Copy these 
 | [CLAUDE-python.md](CLAUDE-python.md) | Prompt template for Python projects |
 | [CLAUDE-rust.md](CLAUDE-rust.md) | Prompt template for Rust projects |
 | [CLAUDE-go.md](CLAUDE-go.md) | Prompt template for Go projects |
+| [CLAUDE-csharp.md](CLAUDE-csharp.md) | Prompt template for C#/.NET projects |
+| [CLAUDE-java.md](CLAUDE-java.md) | Prompt template for Java projects (Maven/Gradle) |
+| [CLAUDE-swift.md](CLAUDE-swift.md) | Prompt template for Swift projects (SPM/Xcode) |
 | [PLAN.md](PLAN.md) | Planning mode prompt for generating plans |
 | [fix_plan.md](fix_plan.md) | Markdown plan template |
 | [prd.json](prd.json) | JSON plan template |

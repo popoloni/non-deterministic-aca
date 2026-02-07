@@ -16,6 +16,9 @@ The "ship while you sleep" promise made practical. This chapter provides the com
 | [macos/auto-compound.plist](macos/auto-compound.plist) | macOS launchd config for Job 2 |
 | [macos/caffeinate.plist](macos/caffeinate.plist) | Keep Mac awake during automation |
 | [linux/crontab](linux/crontab) | Linux cron configuration |
+| [windows/ralph.ps1](windows/ralph.ps1) | PowerShell Ralph loop wrapper |
+| [windows/ralph-nightly.xml](windows/ralph-nightly.xml) | Task Scheduler XML for nightly loops |
+| [windows/prevent-sleep.ps1](windows/prevent-sleep.ps1) | Prevent Windows sleep during loops |
 
 ## The Two-Job Sequence
 
@@ -40,4 +43,33 @@ launchctl list | grep yourproject
 
 # Test manually
 launchctl start com.yourproject.daily-compound-review
+```
+
+## Quick Setup (Windows — Native PowerShell)
+
+```powershell
+# Import the Task Scheduler XML (edit paths in the XML first)
+Register-ScheduledTask -TaskName "Ralph-Nightly" `
+    -Xml (Get-Content .\windows\ralph-nightly.xml -Raw)
+
+# Prevent sleep during overnight loops
+.\windows\prevent-sleep.ps1
+
+# Test manually
+.\windows\ralph.ps1 -MaxIterations 5 -Tool claude
+
+# Re-enable sleep after testing
+.\windows\prevent-sleep.ps1 -Restore
+```
+
+## Quick Setup (Windows — WSL 2, Recommended)
+
+```bash
+# Install WSL with Ubuntu (PowerShell, run as Administrator)
+wsl --install -d Ubuntu
+
+# Inside Ubuntu: install tools and use cron as in the Linux section
+sudo apt install -y nodejs git jq
+npm install -g @anthropic-ai/claude-code
+crontab -e
 ```
