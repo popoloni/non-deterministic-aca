@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "created": "2026-02-04",
+    "branch": "feature/user-auth",
+    "status": "in_progress"
+  },
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "User login form",
+      "priority": "high",
+      "acceptanceCriteria": [
+        "Form has email and password fields",
+        "Email validation on blur",
+        "Password minimum 8 characters",
+        "Submit button disabled until valid",
+        "Error messages display inline",
+        "Loading state during submission"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Password reset flow",
+      "priority": "high",
+      "dependsOn": ["US-001"],
+      "acceptanceCriteria": [
+        "Reset link sent to valid emails",
+        "Link expires after 24 hours",
+        "New password must meet complexity rules",
+        "Success confirmation displayed"
+      ],
+      "passes": false,
+      "notes": ""
+    }
+  ],
+  "discoveredIssues": []
+}

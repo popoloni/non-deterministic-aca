@@ -1,0 +1,19 @@
+# .ralphrc - frankbria/ralph-claude-code configuration
+# Copy to your project root as .ralphrc
+
+# Rate limiting
+RALPH_RATE_LIMIT=100
+RALPH_RATE_WINDOW=3600  # seconds
+
+# Session management
+RALPH_SESSION_TIMEOUT=86400  # 24 hours
+
+# Circuit breaker
+RALPH_CIRCUIT_THRESHOLD=3
+RALPH_CIRCUIT_RESET=300  # 5 minutes
+
+# Quality checks (customize for your project)
+RALPH_QUALITY_CHECKS="npm run typecheck && npm run lint && npm test"
+
+# Iteration limits
+RALPH_MAX_ITERATIONS=50

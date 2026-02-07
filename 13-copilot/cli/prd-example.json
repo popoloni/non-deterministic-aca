@@ -1,0 +1,23 @@
+[
+  {
+    "category": "functional",
+    "description": "User can send a message and see it in the conversation",
+    "steps": [
+      "Open chat",
+      "Type message",
+      "Click Send",
+      "Verify it appears"
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Chat window shows timestamps on messages",
+    "steps": [
+      "Send a message",
+      "Verify timestamp appears",
+      "Verify format is HH:MM"
+    ],
+    "passes": false
+  }
+]

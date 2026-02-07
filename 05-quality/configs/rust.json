@@ -1,0 +1,10 @@
+{
+  "tool": "claude",
+  "qualityChecks": [
+    "cargo check",
+    "cargo clippy -- -D warnings",
+    "cargo test",
+    "cargo fmt --check"
+  ],
+  "maxIterations": 30
+}

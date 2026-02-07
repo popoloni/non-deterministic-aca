@@ -1,0 +1,10 @@
+{
+  "tool": "claude",
+  "qualityChecks": [
+    "python -m mypy src --strict",
+    "python -m ruff check src",
+    "python -m pytest tests/ -v --cov=src",
+    "python -m ruff format --check src"
+  ],
+  "maxIterations": 25
+}

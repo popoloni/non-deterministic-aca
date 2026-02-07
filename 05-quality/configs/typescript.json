@@ -1,0 +1,11 @@
+{
+  "tool": "claude",
+  "qualityChecks": [
+    "npx tsc --noEmit",
+    "npm run lint",
+    "npm test -- --coverage --passWithNoTests",
+    "npm run build"
+  ],
+  "maxIterations": 25,
+  "branchPrefix": "ralph/"
+}

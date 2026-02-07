@@ -1,0 +1,19 @@
+=== Iteration 3 | 2025-01-15 02:14 UTC ===
+Task: Add client-side validation for email format
+Status: SUCCESS
+Files modified: src/components/LoginForm.tsx, src/utils/validate.ts
+Notes: Used zod schema; existing pattern in RegisterForm.tsx
+
+=== Iteration 4 | 2025-01-15 02:22 UTC ===
+Task: Create /api/auth/login endpoint
+Status: FAIL - tests failing
+Error: Missing CORS middleware on new route; existing routes
+       have it applied in middleware.ts but new file missed it
+Will retry next iteration with CORS fix.
+
+=== Iteration 5 | 2025-01-15 02:31 UTC ===
+Task: Create /api/auth/login endpoint (retry)
+Status: SUCCESS
+Files modified: src/routes/auth/login.ts, src/middleware.ts
+Notes: Added route to middleware CORS whitelist.
+       LEARNING: new API routes must be registered in middleware.ts

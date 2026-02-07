@@ -1,0 +1,31 @@
+# hats.yml - Hat-based orchestration configuration
+# Each hat is a specialized persona that responds to events
+
+event_loop:
+  starting_event: "task.start"
+
+hats:
+  builder:
+    name: "Builder"
+    triggers: ["task.start"]
+    publishes: ["task.done"]
+    instructions: |
+      You are a focused implementer. Given a task specification,
+      write clean, tested code that meets the acceptance criteria.
+      Do not expand scope beyond the specification.
+
+  tester:
+    name: "Tester"
+    triggers: ["task.done"]
+    publishes: ["tests.pass", "tests.fail"]
+    instructions: |
+      You verify that the implementation meets acceptance criteria.
+      Run all tests. Report pass or fail with details.
+
+  reviewer:
+    name: "Reviewer"
+    triggers: ["tests.pass"]
+    publishes: ["review.done"]
+    instructions: |
+      Review the implementation for quality, security, and
+      adherence to project patterns. Provide actionable feedback.

@@ -1,0 +1,10 @@
+{
+  "stories": [
+    { "id": 1, "title": "Login form UI",
+      "criteria": "Renders email + password fields",
+      "passes": true },
+    { "id": 2, "title": "Input validation",
+      "criteria": "Rejects empty or malformed email",
+      "passes": false }
+  ]
+}

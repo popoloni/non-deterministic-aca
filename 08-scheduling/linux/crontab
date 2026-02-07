@@ -1,0 +1,10 @@
+# Ralph Overnight Automation - Linux cron configuration
+# Install with: crontab -e
+
+# Compound Review at 10:30 PM
+30 22 * * * cd /home/you/projects/your-project && \
+  ./scripts/daily-compound-review.sh >> logs/compound-review.log 2>&1
+
+# Auto-Compound at 11:00 PM  
+0 23 * * * cd /home/you/projects/your-project && \
+  ./scripts/compound/auto-compound.sh >> logs/auto-compound.log 2>&1
