@@ -1,10 +1,10 @@
 # Non-Deterministic Autonomous Coding Agents: Companion Repository
 
-> 📚 **Companion materials for ["Non-Deterministic Autonomous Coding Agents: Building Self-Improving Systems That Ship While You Sleep"](https://www.amazon.com/dp/B0DXXXXXX)** by Enrico Papalini
+> 📚 **Companion materials for ["Non-Deterministic Autonomous Coding Agents: Building Self-Improving Systems That Ship While You Sleep"](https://www.amazon.com/dp/B0GM99HHRN)** by Enrico Papalini
 
 <p align="center">
-  <a href="https://www.amazon.com/dp/B0DXXXXXX">
-    <img src="https://via.placeholder.com/300x450?text=ACA+Book+Cover" alt="Non-Deterministic Autonomous Coding Agents Book Cover" width="300">
+  <a href="[https://www.amazon.com/dp/B0DXXXXXX](https://www.amazon.com/dp/B0GM99HHRN)">
+    <img src="https://m.media-amazon.com/images/I/81FDfZul-BL._SL1500_.jpg" alt="Non-Deterministic Autonomous Coding Agents Book Cover" width="300">
   </a>
 </p>
 
