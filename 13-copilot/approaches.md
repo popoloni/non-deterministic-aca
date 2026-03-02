@@ -43,3 +43,5 @@ Uses `#runSubagent` in Copilot Chat. Excellent cost efficiency—subagent calls 
 ## Approach 4: Manual Loop
 
 New chat session per task. No tooling needed but requires discipline.
+
+See [vscode-manual-loop/](vscode-manual-loop/) for the complete implementation from the **bonus chapter** *(online only — not in the printed book)*: behavior contract, fix plan template, session launcher script, and a [sample chapter PDF](vscode-manual-loop/sample-chapter5-vscode-ralph.pdf).

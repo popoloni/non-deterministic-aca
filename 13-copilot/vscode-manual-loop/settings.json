@@ -1,0 +1,4 @@
+{
+  "chat.agent.maxRequests": 200,
+  "github.copilot.chat.agent.runTasks": true
+}

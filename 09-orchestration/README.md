@@ -39,6 +39,11 @@ Ralph-style orchestration (file-driven, stateless iterations) is not the only ap
 - **Writing code in a repo?** → Ralph loop (with or without hats) is simpler and more robust
 - **Data pipelines, content generation, customer support?** → Explore the frameworks above
 
+## See Also
+
+- [Subagent orchestration with GitHub Copilot](../13-copilot/subagent-orchestrator.md) — using `#runSubagent` in Copilot Chat
+- [VS Code manual loop](../13-copilot/vscode-manual-loop/) — behavior contracts and fresh-context sessions *(bonus chapter, online only)*
+
 ## Hat-Based Orchestration
 
 Each hat has:

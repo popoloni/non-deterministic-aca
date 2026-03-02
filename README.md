@@ -25,7 +25,7 @@ This repository contains **working code examples, scripts, templates, and practi
 
 ## 📘 Book Structure
 
-The book is organized into **11 Chapters** plus **4 Appendices**:
+The book is organized into **11 Chapters** plus **4 Appendices**, with a **bonus chapter** available exclusively in this repository and as a free PDF sample:
 
 | Part | Focus | Chapters |
 |------|-------|----------|
@@ -51,6 +51,7 @@ The book is organized into **11 Chapters** plus **4 Appendices**:
 | 9b | Scheduling and Overnight Execution | Cron, launchd, cloud execution |
 | 10 | Multi-Agent Orchestration | Hat-based, planner-worker, Gas Town |
 | 11 | Safety, Security, and Risk Management | Sandboxing, blast radius, overbaking |
+| **Bonus** | **Ralph in the Editor** *(online only)* | Behavior contracts, VS Code manual loop, fresh-context sessions |
 
 ---
 
@@ -83,16 +84,16 @@ git clone https://github.com/popoloni/non-deterministic-aca.git
 cd non-deterministic-aca
 
 # 2. Verify prerequisites
-./templates/scripts/verify-ralph-prereqs.sh
+./templates/verify-ralph-prereqs.sh
 
 # 3. Set up your first Ralph Loop
-cp -r templates/scripts/ralph/ your-project/scripts/ralph/
-cp templates/plan-files/fix_plan.md your-project/
-cp templates/agents-md/AGENTS.md your-project/
+cp templates/fix_plan.md your-project/
+cp templates/AGENTS.md your-project/
+cp 02-ralph-loop/scripts/ralph.sh your-project/
 
 # 4. Run Ralph
 cd your-project
-./scripts/ralph/ralph.sh 10
+./ralph.sh 10
 ```
 
 ---

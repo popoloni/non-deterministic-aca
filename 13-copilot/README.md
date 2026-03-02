@@ -16,6 +16,7 @@ Four approaches to running Ralph Loops with GitHub Copilot, each with different 
 | [cli/](cli/) | Copilot CLI loop scripts and configs |
 | [extensions.md](extensions.md) | VS Code extension guide |
 | [subagent-orchestrator.md](subagent-orchestrator.md) | Subagent orchestration in VS Code Chat |
+| [vscode-manual-loop/](vscode-manual-loop/) | **Bonus chapter** *(online only — not in the printed book)*: behavior contracts, VS Code manual loop, scripts, templates, and [sample PDF](vscode-manual-loop/sample-chapter5-vscode-ralph.pdf) |
 
 ## Copilot vs Claude Code
 

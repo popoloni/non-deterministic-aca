@@ -22,7 +22,7 @@ Systematic approaches to diagnosing and fixing common issues when autonomous loo
 |---------|--------|-------------|
 | Loop exits early | [check-early-exit.sh](diagnostics/check-early-exit.sh) | Missing plan file or wrong branch |
 | Loop never exits | [check-infinite.sh](diagnostics/check-infinite.sh) | Wrong completion promise format |
-| Quality checks failing | [check-quality.sh](diagnostics/check-quality.sh) | Environment mismatch |
+| Quality checks failing | See [05-quality](../05-quality/) | Environment mismatch |
 | Agent stuck on same issue | [check-stuck.sh](diagnostics/check-stuck.sh) | Task too large or missing context |
 | Duplicate implementations | [check-duplicates.sh](diagnostics/check-duplicates.sh) | Not searching before implementing |
 | Cost running away | [check-costs.sh](diagnostics/check-costs.sh) | No iteration limits set |
